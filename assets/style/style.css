@@ -1,0 +1,64 @@
+:root {
+    --primary-color:#1d82a1 ;
+    --secondary-color: #f0d1d8;
+    --tertiary-color: #075066;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header h1 {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    color: #c3dde6;
+    background-color: var(--tertiary-color);
+}
+header nav ul {
+    margin: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #c3dde6;
+}
+header nav ul li a:hover {
+    background: var(--tertiary-color);
+}
+.about{
+    padding: 50px;
+    display: flex;
+}
+.headshot img {
+    width: 160px;
+    margin: 50px;
+}
+.headshot {
+    border-right: 3px solid var(--tertiary-color)
+}
+.about-brian {
+    padding: 50px;
+}
+.about-brian h2 {
+    
+}
