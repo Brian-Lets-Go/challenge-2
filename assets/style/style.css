@@ -166,9 +166,7 @@ header nav ul li a:hover {
         flex-direction: column;
         margin-left: 50px;
         margin-bottom: 10px;
-        
     }
-
 }
 
 @media screen and (max-width: 990px) {
@@ -194,6 +192,31 @@ header nav ul li a:hover {
         border-right: none;
         margin-left: 20px;
     }
+    .contact-brian {
+        flex-direction: column;
+    }
+    .title-contact-brian {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-right: none;
+    }
+    .contact-info {
+        display: block;
+        margin-left: 0px;
+    }
+    .contact-anchors {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info h3 {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-info a {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
 
 }
 
