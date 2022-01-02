@@ -1,6 +1,6 @@
 :root {
     --primary-color:#1d82a1 ;
-    --secondary-color: #f0d1d8;
+    --secondary-color: #fdffc4;
     --tertiary-color: #075066;
 }
 
@@ -11,8 +11,11 @@
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--secondary-color);
 }
 header {
+    margin: 0;
+    width: 100%;
     background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +32,7 @@ header h1 {
     background-color: var(--tertiary-color);
 }
 header nav ul {
-    margin: 0px 30px;
+    margin: 0px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,7 +42,7 @@ header nav ul {
 header nav ul li a {
     padding: 5px 20px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 32px;
     color: #c3dde6;
 }
 header nav ul li a:hover {
@@ -51,14 +54,149 @@ header nav ul li a:hover {
 }
 .headshot img {
     width: 160px;
-    margin: 50px;
+    margin: 20px;
 }
 .headshot {
     border-right: 3px solid var(--tertiary-color)
 }
 .about-brian {
-    padding: 50px;
+    margin: 20px;
 }
 .about-brian h2 {
-    
+    color: var(--tertiary-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about-brian p {
+    text-align: justify;
+    text-justify: auto;
+    color:var(--tertiary-color);
+}
+.portfolio {
+    display: flex;
+    padding: 50px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 20px;
+}
+.title-portfolio {
+    color: var(--tertiary-color);
+    font-size: 32px;
+    padding-right: 5px;
+    border-right: 3px solid var(--tertiary-color)
+}
+.main-application-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.main-application-card h3 {
+    font-size: 22px;
+    color: var(--tertiary-color);
+}
+.main-application-card p {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--tertiary-color);
+}
+.main-application-card img {
+    max-height: 400px;
+    max-width: 600px;
+}
+.application-card {
+    margin: 0px 50px 0px 0px;
+}
+.application-card h3 {
+    font-size: 22px;
+    color: var(--tertiary-color);
+}
+.application-card p {
+    height: 50px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--tertiary-color);
+}
+.secondary-applications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.secondary-applications img {
+    width: 275px;
+    height: 200px;
+}
+.contact-brian {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.title-contact-brian {
+    color: var(--tertiary-color);
+    font-size: 32px;
+    padding-right: 5px;
+    border-right: 3px solid var(--tertiary-color);
+    margin-left: 70px;
+}
+.contact-info {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: var(--tertiary-color);
+    justify-content: flex-start;
+}
+.contact-info h3 {
+    margin: 0px 30px;
+}
+.contact-info a {
+    margin: 0px 25px;
+    color: var(--tertiary-color);
+}
+
+@media screen and (max-width: 1050px) {
+    header nav ul {
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        flex-direction: column;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .portfolio img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+    .secondary-applications {
+        flex-direction: column;
+      
+    }
+    .about {
+        flex-direction: column;
+    }
+    .headshot {
+        border-right: none;
+    }
+    .portfolio {
+        flex-direction: column;
+    }
+    .title-portfolio {
+        border-right: none;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
 }
